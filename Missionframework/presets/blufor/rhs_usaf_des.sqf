@@ -19,7 +19,7 @@ FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This 
 FOB_truck_typename = "rhsusf_M1078A1P2_B_D_CP_fmtv_usarmy";             // This is the FOB as a vehicle.
 Arsenal_typename = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
 Respawn_truck_typename = "rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy";    // This is the mobile respawn (and medical) truck.
-huron_typename = "RHS_CH_47F";                                          // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
+huron_typename = "TF373_SOAR_MH47G_No_Rear_Guns";                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 crewman_classname = "B_crew_F";                                         // This defines the crew for vehicles.
 pilot_classname = "B_Helipilot_F";                                      // This defines the pilot for helicopters.
 fixed_wing_classname = "B_Pilot_F";                                     // This defines the pilot for fixed wing aircraft.
@@ -144,7 +144,7 @@ air_vehicles = [
     ["RHS_AH1Z",1100,500,400],                                        // AH-1Z (Multi-Role)
     ["RHS_AH64D",1200,600,400],                                       // AH-64D (Multi-Role)
     ["vtx_UH60M_SLICK",0,0,0],                                          // UH-60M (Unarmed)
-    ["vtx_MH60M",1000,600,400],                                       // UH-60M
+    ["vtx_MH60M",0,0,0],                                       // UH-60M
     ["vtx_MH60M_DAP",1200,900,400],                                   // UH-60M DAP
     ["vtx_UH60M_MEDEVAC",0,0,0],                                // UH-60M MEV2
     ["RHS_CH_47F_10",0,0,0],                                         // CH-47 Chinook (Armed)
