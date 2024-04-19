@@ -13851,6 +13851,9 @@
 "CUP_optic_RCO",
 "CUP_optic_ACOG_TA01NSN_Black_PIP",
 "CUP_optic_ACOG_TA01NSN_Black_3D",
+"UK3CB_P320_DES",
+"UK3CB_P320",
+"UK3CB_P320_9X19_17Rnd",
 "M320_GL"];
 
 GRLIB_arsenal_magazines = ["ItemCompass"];
