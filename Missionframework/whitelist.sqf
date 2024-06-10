@@ -53,6 +53,7 @@ GRLIB_whitelisted_steamids = [
 	"76561198144781604",   //Zaren.T
 	"76561198011762696",   //Rodhal.S
 	"76561198119351043",   //Sparrow.P
+	"76561198016507179",   //Neubauer.P
 	"76561198022384519"    //Moraru.R
 
 ];
