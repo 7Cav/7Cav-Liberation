@@ -12,8 +12,8 @@ if (KP_liberation_arsenalUsePreset) then {
     if (isNil "GRLIB_arsenal_backpacks") then {GRLIB_arsenal_backpacks = []};
     if (isNil "blacklisted_from_arsenal") then {blacklisted_from_arsenal = []};
 
-    if ((count GRLIB_arsenal_weapons) isEqualTo 0) then {
-        if ((count blacklisted_from_arsenal) isEqualTo 0) then {
+    if ((count GRLIB_arsenal_weapons) == 0) then {
+        if ((count blacklisted_from_arsenal) == 0) then {
             _weapons = _crawled select 0;
         } else {
             {if (!(_x in blacklisted_from_arsenal)) then {_weapons pushBack _x};} forEach (_crawled select 0);
@@ -29,12 +29,12 @@ if (KP_liberation_arsenalUsePreset) then {
     if !(configProperties [configFile >> "CBA_DisposableLaunchers"] isEqualTo []) then {
         private _disposableLaunchers = ["CBA_FakeLauncherMagazine"];
         {
-            private _loadedLauncher = cba_disposable_LoadedLaunchers getVariable _x;
+            private _loadedLauncher = cba_disposable_LoadedLaunchers get _x;
             if (!isNil "_loadedLauncher") then {
                 _disposableLaunchers pushBack _loadedLauncher;
             };
 
-            private _normalLauncher = cba_disposable_NormalLaunchers getVariable _x;
+            private _normalLauncher = cba_disposable_NormalLaunchers get _x;
             if (!isNil "_normalLauncher") then {
                 _normalLauncher params ["_loadedLauncher"];
                 _disposableLaunchers pushBack _loadedLauncher;
@@ -43,8 +43,8 @@ if (KP_liberation_arsenalUsePreset) then {
         KP_liberation_allowed_items append _disposableLaunchers;
     };
 
-    if ((count GRLIB_arsenal_magazines) isEqualTo 0) then {
-        if ((count blacklisted_from_arsenal) isEqualTo 0) then {
+    if ((count GRLIB_arsenal_magazines) == 0) then {
+        if ((count blacklisted_from_arsenal) == 0) then {
             _magazines = _crawled select 1;
         } else {
             {if (!(_x in blacklisted_from_arsenal)) then {_magazines pushBack _x};} forEach (_crawled select 1);
@@ -56,11 +56,11 @@ if (KP_liberation_arsenalUsePreset) then {
         KP_liberation_allowed_items append GRLIB_arsenal_magazines;
     };
 
-    if ((count GRLIB_arsenal_items) isEqualTo 0) then {
-        if ((count blacklisted_from_arsenal) isEqualTo 0) then {
+    if ((count GRLIB_arsenal_items) == 0) then {
+        if ((count blacklisted_from_arsenal) == 0) then {
             _items = _crawled select 2;
         } else {
-            {if (!(_x in blacklisted_from_arsenal) && !(["RUGBY", _x] call BIS_fnc_inString)) then {_items pushBack _x};} forEach (_crawled select 2);
+            {if (!(_x in blacklisted_from_arsenal)) then {_items pushBack _x};} forEach (_crawled select 2);
         };
         [missionNamespace, _items] call BIS_fnc_addVirtualItemCargo;
         KP_liberation_allowed_items append _items;
@@ -69,8 +69,8 @@ if (KP_liberation_arsenalUsePreset) then {
         KP_liberation_allowed_items append GRLIB_arsenal_items;
     };
 
-    if ((count GRLIB_arsenal_backpacks) isEqualTo 0) then {
-        if ((count blacklisted_from_arsenal) isEqualTo 0) then {
+    if ((count GRLIB_arsenal_backpacks) == 0) then {
+        if ((count blacklisted_from_arsenal) == 0) then {
             _backpacks = _crawled select 3;
         } else {
             {if (!(_x in blacklisted_from_arsenal)) then {_backpacks pushBack _x};} forEach (_crawled select 3);
@@ -83,10 +83,10 @@ if (KP_liberation_arsenalUsePreset) then {
     };
 
     {
-        if ((_x find "rhs_acc") isEqualTo 0) then {
+        if ((_x find "rhs_acc") == 0) then {
             KP_liberation_allowed_items_extension append [_x + "_3d", _x + "_pip"];
         };
-        if ((_x find "rhsusf_acc") isEqualTo 0) then {
+        if ((_x find "rhsusf_acc") == 0) then {
             KP_liberation_allowed_items_extension append [_x + "_3d", _x + "_pip"];
         };
     } forEach KP_liberation_allowed_items;
