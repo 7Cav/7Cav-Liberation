@@ -4,12 +4,12 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 /* BLUFOR preset:
 WIP 
 */
-KP_liberation_preset_blufor = 4;
+KP_liberation_preset_blufor = 1;
 
 /* OPFOR preset:
 WIP 
 */
-KP_liberation_preset_opfor = 4;
+KP_liberation_preset_opfor = 3;
 
 /* Resistance preset:
 WIP
@@ -24,4 +24,4 @@ KP_liberation_preset_civilians = 1;
 /*
 WIP
 */
-KP_liberation_arsenal = 5;
+KP_liberation_arsenal = 0;

@@ -19,7 +19,7 @@ FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This 
 FOB_truck_typename = "rhsusf_M1078A1P2_B_D_CP_fmtv_usarmy";             // This is the FOB as a vehicle.
 Arsenal_typename = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
 Respawn_truck_typename = "rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy";    // This is the mobile respawn (and medical) truck.
-huron_typename = "RHS_CH_47F";                                          // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
+huron_typename = "TF373_SOAR_MH47G_No_Rear_Guns";                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 crewman_classname = "B_crew_F";                                         // This defines the crew for vehicles.
 pilot_classname = "B_Helipilot_F";                                      // This defines the pilot for helicopters.
 fixed_wing_classname = "B_Pilot_F";                                     // This defines the pilot for fixed wing aircraft.
@@ -144,7 +144,7 @@ air_vehicles = [
     ["RHS_AH1Z",1100,500,400],                                        // AH-1Z (Multi-Role)
     ["RHS_AH64D",1200,600,400],                                       // AH-64D (Multi-Role)
     ["vtx_UH60M_SLICK",0,0,0],                                          // UH-60M (Unarmed)
-    ["vtx_MH60M",1000,600,400],                                       // UH-60M
+    ["vtx_MH60M",0,0,0],                                       // UH-60M
     ["vtx_MH60M_DAP",1200,900,400],                                   // UH-60M DAP
     ["vtx_UH60M_MEDEVAC",0,0,0],                                // UH-60M MEV2
     ["RHS_CH_47F_10",0,0,0],                                         // CH-47 Chinook (Armed)
@@ -171,9 +171,9 @@ air_vehicles = [
     ["USAF_F35A",1700,700,600],                                       // F-35A Lightning II (Heavy)
     ["B_Plane_Fighter_01_F",1700,700,600],                            // F/A-181 Black Wasp II
     ["B_Plane_Fighter_01_Stealth_F",1700,700,600],                    // F/A-181 Black Wasp II (Stealth)
-    ["USAF_AC130U",2200,2000,2000],                                  // AC130 SPOOKY II
-    ["B_T_VTOL_01_infantry_F",0,0,0],                                // V-44 X Blackfish (Infantry)
-    ["B_T_VTOL_01_vehicle_F",2000,1700,1000]                         // V-44 X Blackfish (Vehicle)
+    //["USAF_AC130U",2200,2000,2000],                                  // AC130 SPOOKY II
+    ["UK3CB_B_Osprey_USMC_D",0,0,0],                                 // Osprey Cargo
+    ["UK3CB_B_Osprey_IDWS_HMG_USMC_D",1500,1700,1000]                // Osprey Armed
 ];
 
 static_vehicles = [
@@ -291,8 +291,8 @@ support_vehicles = [
     [Respawn_truck_typename,1000,0,600],
     [FOB_box_typename,2000,2000,500],
     [FOB_truck_typename,2000,2000,2000],
-    [KP_liberation_small_storage_building,200,0,0],
-    [KP_liberation_large_storage_building,200,0,0],
+    [KP_liberation_small_storage_building,0,0,0],
+    [KP_liberation_large_storage_building,0,0,0],
     [KP_liberation_recycle_building,400,0,0],
     [KP_liberation_air_vehicle_building,1000,0,0],
     [KP_liberation_heli_slot_building,0,0,0],
@@ -438,8 +438,8 @@ elite_vehicles = [
     "USAF_F35A_STEALTH",                                                // F-35A Lightning II
     "USAF_F35A",                                                        // F-35A Lightning II (Heavy)
     "JS_JC_FA18E",                                                      // F/A-18 E Super Hornet
-    "JS_JC_FA18F",                                                      // F/A-18 F Super Hornet
-    "USAF_AC130U"                                                       // AC130 SPOOKY II
+    "JS_JC_FA18F"                                                      // F/A-18 F Super Hornet
+    //"USAF_AC130U"                                                       // AC130 SPOOKY II
 ];
 
 ignore_clearcargo_items = [
